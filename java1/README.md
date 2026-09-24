@@ -1,11 +1,57 @@
-# Java I - Pasaporta digjitale
+# Java I – Pasaporta digjitale
 
-Në këtë detyrë është krijuar një pasaportë digjitale për
-një personazh të sajuar.
+## Përshkrimi
 
-## Hapja e projektit
+Në këtë detyrë kam krijuar një pasaportë digjitale për një personazh të sajuar me emrin Arta Orbita, e cila paraqitet si udhërrëfyese e një kampusi imagjinar.
 
-1. Hap repository-n në VS Code.
-2. Hap folderin JavaI.
-3. Hap index.html përmes Live Server.
-4. Përdor lidhjen "Rreth Artës" për të kaluar në rreth.html.
+Projekti përmban faqen kryesore `index.html`, faqen `rreth.html` dhe stilizimin me `style.css`.
+
+## Si hapet projekti
+
+1. Hap repository-n në Visual Studio Code.
+2. Hap folderin `java1`.
+3. Hap `index.html` me Live Server.
+4. Përmes lidhjes "Rreth Artës" mund të hapet faqja `rreth.html`.
+5. Përmes lidhjes "Kthehu te pasaporta" mund të kthehemi në `index.html`.
+
+## Testimi
+
+### Testi 1 – Hapja e faqes kryesore
+
+Hyrje: Hapja e `index.html` me Live Server.
+
+Rezultati i pritur: Faqja kryesore duhet të hapet pa gabime.
+
+Rezultati i marrë: Faqja u hap me sukses.
+
+### Testi 2 – Lidhja te rreth.html
+
+Hyrje: Klikimi i lidhjes "Rreth Artës".
+
+Rezultati i pritur: Duhet të hapet `rreth.html`.
+
+Rezultati i marrë: `rreth.html` u hap me sukses dhe nuk u shfaq gabimi 404.
+
+### Testi 3 – Lidhja e kthimit
+
+Hyrje: Klikimi i lidhjes "Kthehu te pasaporta".
+
+Rezultati i pritur: Duhet të hapet përsëri `index.html`.
+
+Rezultati i marrë: `index.html` u hap me sukses.
+
+## DevTools – Network
+
+Dokumenti `index.html` u kontrollua përmes DevTools → Network.
+
+- Request URL: http://127.0.0.1:5500/java1/index.html
+- Request Method: GET
+- Status Code: 304 Not Modified
+
+## Reflektimi individual
+
+Një ndryshim i ruajtur lokalisht në kompjuter nuk shihet në GitHub derisa të bëhet push. Commit-i e regjistron ndryshimin në historinë lokale të Git-it, ndërsa push-i i dërgon commit-et në GitHub.
+
+## AI dhe burimet
+
+Për realizimin dhe sqarimin e disa pjesëve të detyrës është përdorur ChatGPT si mjet ndihmës. Kodi është kontrolluar dhe testuar lokalisht para dorëzimit.
